@@ -1,0 +1,78 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Financial Needs Assessment</title> 
+<link rel="stylesheet" href="styles.css">
+</head>
+ 
+<body>
+<h1 id="title" class="title">Financial Needs Analysis Survey</h1>
+<p id="description" class="description"><em>brought to you by the finance department</em></p>
+
+<fieldset>
+<form id="survey-form">
+<label for="name" id="name-label" type="text"> Name <input id="name" type="text" required placeholder="Enter your name"></input></label>
+<label for="email" id="email-label" type="email">Email <input id="email" type="email" required placeholder="Enter your email"></input></label> 
+<label for="number" id="number-label" type="number">Age (optional) <input id="number" type="number" required min="18" max="70" placeholder="Age"></input></label> 
+
+<label for="employment-status">Which option best describes your current role?</label>
+<select id="dropdown" class="dropdown">
+  <option value="">Select current role</option>
+  <option value="1">Unemployed</option>
+  <option value="2">Full-time student</option>
+  <option value="3">Employed full time(30+ hours)</option>
+ <option value="4">Retired</option>
+</select>
+
+<label for="industry">Please provide your current/prior industry</label>
+<select id="dropdown" class="dropdown">
+  <option value="">Select industry</option>
+  <option value="1">Financial Services</option>
+  <option value="2">Technology</option>
+  <option value="3">Education</option>
+ <option value="4">Legal</option>
+  <option value="5">Other</option>
+</select>
+
+<label for="text-area">If other - Please specify below</label>
+<textarea id="text-area" class="textarea" rows="3" cols="10" required></textarea>
+
+
+
+<label for="services">  What is your investment objective?</label>
+<select id="dropdown" class="dropdown">
+  <option> Select an option </option>
+  <option> I want to grow my money in an account that is suitable for my financial goals. </option>
+  <option> I am saving for retirement </option>
+  <option> I want to preserve and grow my existing retirement savings </option>
+  <option> I want to diversify my portfolio </option>
+</select>
+
+<label for="services"> Which of these services do you need assistance in? (Check all that apply)</label>
+
+<label for="services"><input type="checkbox" value="1" class="checkbox">Investing</input></label>
+<label for="services"><input type="checkbox" value="2" class="checkbox">Planning for retirement</input>
+<label for="services"><input type="checkbox" value="3" class="checkbox">Medical aid</input></label>
+<label for="services"><input type="checkbox" value="4" class="checkbox">Life insurance</input></label>
+<label for="services"><input type="checkbox" value="5" class="checkbox">Estate planning</input></label>
+<label for="services"><input type="checkbox" value="6" class="checkbox">Short term insurance</input></label>
+
+<label for="time">Please let us know of a suitable time to contact you </label>
+<label for="time">
+  <input id="time" type="radio" value="1" name="input-radio" class="inline" /> Morning (Between 8am - 12pm) </label>
+  <label for="time">
+  <input id="time" type="radio" value="2" name="input-radio" class="inline" /> Midday (Between 1pm - 5pm) </label>
+  <input id="time" type="radio" value="3" name="input-radio" class="inline" /> Evening (Between 6pm - 8pm)</label>
+  
+<label for="text-area">Is there anything else you would like to know?</label>
+<textarea id="text-area" class="textarea" rows="5" cols="50"></textarea>
+
+<button type="submit" id="submit" class="submit">Submit</button>
+</fieldset>
+</form>
+</body>
+</html>
