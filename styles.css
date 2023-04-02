@@ -6,8 +6,10 @@ text-align: center;
 }
 
 body{
+background-repeat: 1;
 background-image: url(images/photo-1579621970588-a35d0e7ab9b6.avif);
 }
+
 fieldset{
   width: 40%;
   font-family: sans-serif;
@@ -53,7 +55,6 @@ float:left;
   margin: 1em auto;
   height: 3em;
   background-color: rgb(211,211,211);
-  border-color: black;
 }
 
 button:hover {
