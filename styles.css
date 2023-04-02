@@ -4,10 +4,9 @@ margin-left: auto;
 margin-right: auto;
 text-align: center;
 }
-body{
-background-repeat: 1;
-background-image: url(https://images.unsplash.com/photo-1579621970588-a35d0e7ab9b6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)
 
+body{
+background-image: url(images/photo-1579621970588-a35d0e7ab9b6.avif);
 }
 fieldset{
   width: 40%;
@@ -47,11 +46,18 @@ margin: 0 0.5em 0 0;
 vertical-align: middle;
 float:left;
 }
+
 .submit {
   display: block;
   width: 100%;
   margin: 1em auto;
   height: 3em;
-  background-color: #grey;
+  background-color: rgb(211,211,211);
   border-color: black;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
 }
